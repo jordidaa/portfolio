@@ -1,2 +1,1 @@
-npm install react-bootstrap bootstrap
-npm i react-router-dom
+cd /d D:\xampp\htdocs\portfolio

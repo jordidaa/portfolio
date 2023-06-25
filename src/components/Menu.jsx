@@ -7,7 +7,7 @@ function Menu() {
   return (
     <Navbar expand="lg" className="navbar navbar-dark bg-dark" bg="dark" variant="dark">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">Jordi Deuñas</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav

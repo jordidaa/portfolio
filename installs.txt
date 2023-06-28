@@ -1,1 +1,2 @@
 cd /d D:\xampp\htdocs\portfolio
+npm run dev

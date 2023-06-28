@@ -1,0 +1,25 @@
+.skils {
+    text-align: center;
+    background-color: #242424;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+} 
+.skils-container > h2 {
+    padding-top: 2%;
+}
+
+.skils-container > .container >.row > .col > img {
+    width: 150px;
+    height: 150px;
+}
+
+.skils-container > .container >.row > .col > h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 2%;
+}
+
+.skils-container > .container >.row {
+    padding-top: 2%;
+}

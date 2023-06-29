@@ -6,6 +6,8 @@ import Menu from './components/menu';
 import Header from './components/Header';
 import About from './components/About';
 import Skils from './components/Skils';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
     <Header />
     <About />
     <Skils />
+    <Projects />
+    <Contact />
     </>
   )
 }

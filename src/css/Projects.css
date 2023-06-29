@@ -1,0 +1,18 @@
+.projects {
+    text-align: center;
+    background-color: #303030;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+} 
+
+.card {
+    background-color: #242424;
+    color: white;
+    margin: 2%;
+    width: 25%;
+}
+
+.git-image {
+    width: 30px;
+}

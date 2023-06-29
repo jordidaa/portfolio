@@ -14,9 +14,8 @@ function Menu() {
           >
             <Nav.Link href="#about">Quien soy</Nav.Link>
             <Nav.Link href="#skils">Habilidades</Nav.Link>
-            <Nav.Link href="#action2">Proyectos</Nav.Link>
-            <Nav.Link href="#action2">Estudios</Nav.Link>
-            <Nav.Link href="#action2">Contacto</Nav.Link>
+            <Nav.Link href="#projects">Proyectos</Nav.Link>
+            <Nav.Link href="#contact">Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

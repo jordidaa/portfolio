@@ -9,3 +9,15 @@
     width: 30px;
     margin: 2%;
 }
+
+@media screen and (max-width: 768px) {
+    .images {
+        width: 20px;
+    }
+    .contact > .container > .row > .col > h2 {
+        font-size: 1rem;
+    }
+    .contact > .container > .row > .col > p {
+        font-size: 0.8rem;
+    }
+}

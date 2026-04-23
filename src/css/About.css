@@ -1,21 +1,81 @@
 .about {
+    background-color: var(--bg-medium, #242424);
+    color: var(--text-primary, #e0e0e0);
+    padding: 5rem 1rem;
     text-align: center;
-    background-color: #303030;
-    color: white;
-    padding-top: 2%;
-    padding-bottom: 2%;
-} 
-
-.about > p {
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2%;
 }
 
-@media screen and (max-width: 768px) {
-    .about > p {
-        font-size: 1rem;
+/* Shared section styles */
+.section-header {
+    margin-bottom: 2.5rem;
+}
+
+.section-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #64ffda;
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.section-divider {
+    width: 60px;
+    height: 4px;
+    background: #64ffda;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+.about-content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.about-content > p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 400;
+    line-height: 1.8;
+    color: rgba(224, 224, 224, 0.85);
+    margin-bottom: 2rem;
+}
+
+.about-content strong {
+    color: #64ffda;
+    font-weight: 600;
+}
+
+.about-badges {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.badge-item {
+    padding: 0.4rem 1.2rem;
+    border: 1px solid rgba(100, 255, 218, 0.4);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #64ffda;
+    background: rgba(100, 255, 218, 0.07);
+    transition: all 0.2s ease;
+}
+
+.badge-item:hover {
+    background: rgba(100, 255, 218, 0.15);
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 4rem 1.5rem;
     }
 }

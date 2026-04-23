@@ -1,3 +1,34 @@
 :root {
-  background-color: #242424;
+  --bg-dark: #1a1a1a;
+  --bg-medium: #242424;
+  --bg-light: #2e2e2e;
+  --accent: #64ffda;
+  --accent-hover: #45c9aa;
+  --text-primary: #e0e0e0;
+  --text-muted: #9e9e9e;
+  --border: #3a3a3a;
+  --transition: 0.3s ease;
+  --radius: 12px;
+  background-color: var(--bg-dark);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+section, div[id] {
+  scroll-margin-top: 70px;
 }

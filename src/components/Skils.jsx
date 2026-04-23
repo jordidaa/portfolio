@@ -1,7 +1,4 @@
 import '../css/Skils.css'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 import html from '../assets/html.png';
 import css from '../assets/css.svg';
@@ -17,81 +14,58 @@ import laravel from '../assets/laravel.png';
 import mysql from '../assets/mysql.png';
 import postgresql from '../assets/postgresql.png';
 
+const frontendSkills = [
+    { src: html, name: 'HTML' },
+    { src: css, name: 'CSS' },
+    { src: js, name: 'JavaScript' },
+    { src: react, name: 'React' },
+    { src: vue, name: 'Vue' },
+    { src: android, name: 'Android Studio' },
+    { src: bootstrap, name: 'Bootstrap' },
+];
+
+const backendSkills = [
+    { src: php, name: 'PHP' },
+    { src: java, name: 'Java' },
+    { src: python, name: 'Python' },
+    { src: laravel, name: 'Laravel' },
+    { src: mysql, name: 'MySQL' },
+    { src: postgresql, name: 'PostgreSQL' },
+];
+
+function SkillCard({ src, name }) {
+    return (
+        <div className="skill-card">
+            <img src={src} alt={name} />
+            <span>{name}</span>
+        </div>
+    );
+}
+
 function Skils () {
     return (
-        <div className="skils" id='skils'>
-            <h1>Habilidades</h1>
-            <div className="skils-container">
-                <h2>Frontend</h2>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={html} alt="html" />
-                            <h3>HTML</h3>                            
-                        </Col>
-                        <Col>
-                            <img src={css} alt="css" />
-                            <h3>CSS</h3>
-                        </Col>
-                        <Col>
-                            <img src={js} alt="js" />
-                            <h3>JavaScript</h3>
-                        </Col>
-                        <Col>
-                            <img src={react} alt="react" />
-                            <h3>React</h3>                            
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <img src={vue} alt="vue" />
-                            <h3>Vue</h3>
-                        </Col>
-                        <Col>
-                            <img src={android} alt="android" />
-                            <h3>Android Studio</h3>
-                        </Col>
-                        <Col>
-                            <img src={bootstrap} alt="bootstrap" />
-                            <h3>Bootstrap</h3>
-                        </Col>
-                    </Row>
-                </Container>
-                <h2>Backend</h2>
-                <Container>
-                    <Row>
-                        <Col>
-                            <img src={php} alt="php" />
-                            <h3>PHP</h3>                            
-                        </Col>
-                        <Col>
-                            <img src={java} alt="java" />
-                            <h3>Java</h3>
-                        </Col>
-                        <Col>
-                            <img src={python} alt="python" />
-                            <h3>Python</h3>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <img src={laravel} alt="laravel" />
-                            <h3>Laravel</h3>                            
-                        </Col>
-                        <Col>
-                            <img src={mysql} alt="mysql" />
-                            <h3>MySQL</h3>
-                        </Col>
-                        <Col>
-                            <img src={postgresql} alt="postgresql" />
-                            <h3>PostgreSQL</h3>
-                        </Col>
-                    </Row>
-                </Container>          
+        <section className="skils" id='skils'>
+            <div className="section-header">
+                <p className="section-label">02. Tecnologías</p>
+                <h2 className="section-title">Habilidades</h2>
+                <div className="section-divider"></div>
             </div>
-        </div>
-    )
 
+            <div className="skills-category">
+                <h3 className="category-title">Frontend</h3>
+                <div className="skills-grid">
+                    {frontendSkills.map((s) => <SkillCard key={s.name} src={s.src} name={s.name} />)}
+                </div>
+            </div>
+
+            <div className="skills-category">
+                <h3 className="category-title">Backend &amp; Bases de datos</h3>
+                <div className="skills-grid">
+                    {backendSkills.map((s) => <SkillCard key={s.name} src={s.src} name={s.name} />)}
+                </div>
+            </div>
+        </section>
+    )
 }
 
 export default Skils;
